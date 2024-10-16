@@ -1,5 +1,5 @@
 body {background-color:forestgreen;
-background-image: url(image/téléchargement.png);}
+background-image: url(image/téléchargement.png);background-position:center;background-repeat: no-repeat;background-attachment: fixed;}
 
 h1 {text-align: center;}
 

@@ -1,7 +1,35 @@
-header {background-image: url("image/haut.jpg");background-position:top left;background-repeat: no-repeat;background-attachment: fixed;}
+header {
+  /* background-image: url("image/haut.jpg"); */
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-body {background-color:white;}
+body {
+  background-color: white;
+}
 
-h1 {text-align: center;color: black;}
+nav ul {
+  list-style-type: none;
+}
 
-a{text-align: center;color: blueviolet;}
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+a {
+  text-align: center;
+  color: blueviolet;
+}

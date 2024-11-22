@@ -1,6 +1,20 @@
 
+img {
+    width: 500px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+}
+
+#ff15 h1 {
+    font-size: x-large;
+}
+
 #ff15 {
     background-color: #F2E4D4;
+    display: grid;
   }
   
   nav{
@@ -15,7 +29,7 @@
   nav a {
         color: white;
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     margin: auto;
   }
   

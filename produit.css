@@ -1,18 +1,19 @@
 
   body {
-    background-color: F2E4D4;
+    background-color: #F2E4D4;
   }
   
   nav{
-    background-color: 3B3535;
+    background-color: #3B3535;
   }
 
   nav ul {
     list-style-type: none;
+
   }
   
   nav a {
-    color: #000000;
+    color: white;
     text-decoration: none;
   }
   

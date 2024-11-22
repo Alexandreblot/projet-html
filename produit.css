@@ -1,5 +1,5 @@
 
-  body {
+#ff15 {
     background-color: #F2E4D4;
   }
   
@@ -13,8 +13,10 @@
   }
   
   nav a {
-    color: white;
+        color: white;
     text-decoration: none;
+    font-size: x-large;
+    margin: auto;
   }
   
   nav ul {

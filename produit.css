@@ -1,4 +1,17 @@
-
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B3535;
+    padding: 10px 20px;
+    color: white;
+}
 img {
     width: 500px;
     border-top-left-radius: 10%;
@@ -6,6 +19,41 @@ img {
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
 
+}
+.navbar .menu-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: orange;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+    
+.navigation a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav a {
+        color: white;
+    text-decoration: none;
+    font-size: large;
+    margin: auto;
+    text-transform: uppercase;
+}
+  
+nav ul {
+      display: flex;
+      gap: 20px;
+  
 }
 
 #ff15 h1 {
@@ -16,36 +64,5 @@ img {
     background-color: #F2E4D4;
     display: grid;
   }
-  
-  nav{
-    background-color: #3B3535;
-  }
 
-  nav ul {
-    list-style-type: none;
-
-  }
-  
-  nav a {
-        color: white;
-    text-decoration: none;
-    font-size: large;
-    margin: auto;
-  }
-  
-  nav ul {
-      display: flex;
-      gap: 20px;
-  
-  }
-  
-  h1 {
-    text-align: center;
-    color: black;
-  }
-  
-  a {
-    text-align: center;
-    color: blueviolet;
-  }
   

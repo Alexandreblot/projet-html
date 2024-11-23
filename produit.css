@@ -13,7 +13,8 @@ body, h1, p, ul, li, a {
     color: white;
 }
 img {
-    width: 500px;
+    width: 250px;
+    margin: 100px;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;

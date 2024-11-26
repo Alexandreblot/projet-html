@@ -12,6 +12,9 @@
     list-style: none;
     overflow-x: hidden;
   }
+  h1 {
+    text-align: center;
+  }
   body {
     background-color: #f2e4d4;
   }
@@ -72,6 +75,7 @@
   }
   .text-card {
     align-content: center;
+    margin: 2px;
   }
 
   .product-card p {

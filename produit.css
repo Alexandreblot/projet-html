@@ -4,14 +4,7 @@ body, h1, p, ul, li, a {
     text-decoration: none;
     list-style: none;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3B3535;
-    padding: 10px 20px;
-    color: white;
-}
+
 img {
     width: 250px;
     margin: 100px;
@@ -20,41 +13,6 @@ img {
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
 
-}
-.navbar .menu-icon {
-    font-size: 20px;
-    margin-right: 10px;
-    color: orange;
-}
-
-nav ul {
-    list-style-type: none;
-
-}
-
-.navigation {
-    display: flex;
-    gap: 20px;
-}
-    
-.navigation a {
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-nav a {
-        color: white;
-    text-decoration: none;
-    font-size: large;
-    margin: auto;
-    text-transform: uppercase;
-}
-  
-nav ul {
-      display: flex;
-      gap: 20px;
-  
 }
 
 #ff15 h1 {

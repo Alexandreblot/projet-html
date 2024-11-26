@@ -7,39 +7,6 @@ body, h1, p, ul, li, a {
     font-family: Arial, sans-serif;
 }
 
-/* Header styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3e3e3e;
-    padding: 10px 20px;
-    color: white;
-}
-
-.navbar .menu-icon {
-    font-size: 20px;
-    margin-right: 10px;
-    color: orange;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-/* Main section styling */
-main {
-    padding: 20px;
-    background-color: #f7f2e7;
-}
-
 .produits {
     text-align: center;
     padding: 20px;
@@ -63,7 +30,7 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 150px;
+    width: 300px;
     text-align: center;
     padding: 10px;
 }

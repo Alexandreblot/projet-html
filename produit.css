@@ -15,13 +15,32 @@ img {
 
 }
 
-#ff15 h1 {
-    font-size: x-large;
+.Produits > h1{
+    font-size: large;
 }
 
-#ff15 {
+.Produits {
     background-color: #F2E4D4;
     display: grid;
   }
+  .Produits h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-  
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+}

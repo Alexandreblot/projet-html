@@ -18,11 +18,12 @@
 .navigation a {
   color: white;
   font-size: large;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 .navigation {
   display: flex;
   gap: 30px;
+  margin-right: 20px;
 }
 
 .menu {
@@ -34,13 +35,11 @@
   font-size: large;
   margin: auto;
 }
-.navbar a{
-  transition: .2s linear;
+.navbar a {
+  transition: 0.2s linear;
 }
 
 .navbar a:hover,
-.navigation:hover{
+.navigation a:hover {
   transform: scale(1.05);
 }
-
-

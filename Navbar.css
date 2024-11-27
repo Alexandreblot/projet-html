@@ -5,6 +5,8 @@
   background-color: #3b3535;
   padding: 0px 10px;
   margin: 0;
+  text-transform: none;
+  text-decoration: none;
 }
 
 .menu-icon {
@@ -16,10 +18,12 @@
 .navigation a {
   color: white;
   font-size: large;
+  transition: 0.2s linear;
 }
 .navigation {
   display: flex;
   gap: 30px;
+  margin-right: 20px;
 }
 
 .menu {
@@ -30,4 +34,12 @@
   color: white;
   font-size: large;
   margin: auto;
+}
+.navbar a {
+  transition: 0.2s linear;
+}
+
+.navbar a:hover,
+.navigation a:hover {
+  transform: scale(1.05);
 }

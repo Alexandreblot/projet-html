@@ -2,9 +2,9 @@
   header,
   body,
   h1,
-  p,
   ul,
   li,
+  p,
   a {
     margin: 0;
     padding: 0;
@@ -65,11 +65,12 @@
     margin-bottom: 7%;
     margin-right: 5%;
     margin-left: 5%;
+    transition: 0.4s linear;
   }
   .product-card img {
     margin: 10px;
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -80,20 +81,13 @@
 
   .product-card p {
     font-weight: bold;
-    color: #333;
     font-size: 20px;
+    transition: 0.2s linear;
   }
 }
-.btn {
-  background-color: transparent;
-  margin: 0;
-  border: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 5s, color 5s;
-}
-.product-card:hover{
+.product-card:hover {
+  background-color: #383838;
   color: #fff;
-  background-color: gray;
+  transform: scale(1.05);
 }
+

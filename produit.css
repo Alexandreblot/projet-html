@@ -84,3 +84,16 @@
     font-size: 20px;
   }
 }
+.btn {
+  background-color: transparent;
+  margin: 0;
+  border: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 5s, color 5s;
+}
+.product-card:hover{
+  color: #fff;
+  background-color: gray;
+}

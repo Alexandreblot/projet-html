@@ -3,18 +3,13 @@ img{
 }
 #video{
   margin: auto;
-  
-}
-#valeur {
-  padding: 10px;          /* Espacement entre le texte et le bord */
-  margin: 20px;           /* Espacement autour du cadre */
-  border-radius: 5px;     /* Bords arrondis (optionnel) */
-  background-color: gray; /* Couleur de fond (optionnel) */
-  text-align: left;
-  width: 25%;
- }
 
- .anime div{
+  #valeur {
+    padding: 10px;          /* Espacement entre le texte et le bord */
+    margin: 20px;           /* Espacement autour du cadre */
+    border-radius: 5px;     /* Bords arrondis (optionnel) */
+    background-color: gray; /* Couleur de fond (optionnel) */
+    text-align: left;
+    width: 25%;
+   }
   
-
- }

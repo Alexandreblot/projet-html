@@ -1,35 +1,20 @@
-header {
-  /* background-image: url("image/haut.jpg"); */
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+img{
+  width: 50%
 }
-
-body {
-  background-color: white;
+#video{
+  margin: auto;
+  
 }
+#valeur {
+  padding: 10px;          /* Espacement entre le texte et le bord */
+  margin: 20px;           /* Espacement autour du cadre */
+  border-radius: 5px;     /* Bords arrondis (optionnel) */
+  background-color: gray; /* Couleur de fond (optionnel) */
+  text-align: left;
+  width: 25%;
+ }
 
-nav ul {
-  list-style-type: none;
-}
+ .anime div{
+  
 
-nav a {
-  color: #000000;
-  text-decoration: none;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-
-}
-
-h1 {
-  text-align: center;
-  color: black;
-}
-
-a {
-  text-align: center;
-  color: blueviolet;
-}
+ }

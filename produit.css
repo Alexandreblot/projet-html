@@ -90,4 +90,19 @@
   color: #fff;
   transform: scale(1.05);
 }
+.btn{
+  background-color: rgb(237, 95, 95);
+  color: #333;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #333;
+  padding-right:20px;
+  padding-left:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius: 3%;
+  cursor: pointer;
+}
 

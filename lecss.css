@@ -1,15 +1,39 @@
+@media screen and (min-width: 740px) {
+  header,
+  body,
+  h1,
+  ul,
+  li,
+  p,
+  a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+
+
 img{
   width: 50%
 }
 #video{
   margin: auto;
+}
 
-  #valeur {
-    padding: 10px;          /* Espacement entre le texte et le bord */
-    margin: 20px;           /* Espacement autour du cadre */
-    border-radius: 5px;     /* Bords arrondis (optionnel) */
-    background-color: gray; /* Couleur de fond (optionnel) */
+.text-from-left{
+    padding: 10px;          
+    margin: 20px;           
+    border-radius: 5px;     
+    background-color: gray; 
     text-align: left;
     width: 25%;
-   }
-  
+}
+
+.text-from-right{
+    padding: 10px;          
+    margin: 20px;           
+    border-radius: 5px;     
+    background-color: gray; 
+    text-align: left;
+    width: 25%;
+}

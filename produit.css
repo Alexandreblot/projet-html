@@ -1,4 +1,4 @@
-@media screen and (min-width: 740px) {
+
   header,
   body,
   h1,
@@ -48,6 +48,7 @@
     display: flex;
     justify-content: center;
     gap: 35px;
+    flex-wrap: wrap;
   }
 
   .product-card {
@@ -66,8 +67,8 @@
   }
   .product-card img {
     margin: 10px;
-    width: 150px;
-    height: 200px;
+    width: 15vw;
+    height: 30vh;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -77,11 +78,11 @@
   }
 
   .product-card p {
+    text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5vmax;
     transition: 0.2s linear;
   }
-}
 .product-card:hover {
   background-color: #383838;
   color: #fff;

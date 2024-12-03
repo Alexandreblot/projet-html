@@ -19,21 +19,29 @@ img{
 #video{
   margin: auto;
 }
-
-.text-from-left{
-    padding: 10px;          
-    margin: 20px;           
-    border-radius: 5px;     
-    background-color: gray; 
-    text-align: left;
-    width: 25%;
+.actualite-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de revenir à la ligne si nécessaire */
+  justify-content: space-between; /* Aligne les éléments à gauche et à droite */
+  align-items: flex-start; /* Ajuste l'alignement vertical */
 }
 
-.text-from-right{
-    padding: 10px;          
-    margin: 20px;           
-    border-radius: 5px;     
-    background-color: gray; 
-    text-align: left;
-    width: 25%;
+.text-from-left {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: gray;
+  text-align: left;
+  width: 40%; /* Ajustez la largeur si nécessaire */
 }
+
+.text-from-right {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: gray;
+  text-align: left;
+  width: 40%; /* Ajustez la largeur si nécessaire */
+  margin-left: auto; /* Force l'alignement à droite */
+}
+

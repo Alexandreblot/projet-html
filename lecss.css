@@ -51,6 +51,7 @@ body{
   background-color: gray;
   text-align: left;
   width: 40%; /* Ajustez la largeur si nécessaire */
+  margin-right: auto;
 }
 
 .text-from-right {
@@ -62,4 +63,41 @@ body{
   width: 40%; /* Ajustez la largeur si nécessaire */
   margin-left: auto; /* Force l'alignement à droite */
 }
+
+.text-from-left {
+  opacity: 0; /* Initialement invisible */
+  transform: translateX(-100%); /* Position à gauche hors de l'écran */
+  animation: slide-in-left 1s ease-out forwards; /* Animation d'entrée */
+}
+
+.text-from-right {
+  opacity: 0; /* Initialement invisible */
+  transform: translateX(100%); /* Position à droite hors de l'écran */
+  animation: slide-in-right 1s ease-out forwards; /* Animation d'entrée */
+}
+
+/* Animation pour les éléments venant de la gauche */
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation pour les éléments venant de la droite */
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 

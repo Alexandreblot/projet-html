@@ -1,4 +1,4 @@
-@media screen and (min-width: 740px) {
+ 
   header,
   body,
   h1,
@@ -11,14 +11,32 @@
     text-decoration: none;
     list-style: none;
     overflow-x: hidden;
-
-
-img{
-  width: 50%
+  }
+body{
+  background-color: #f2e4d4;
 }
-#video{
-  margin: auto;
+
+#vitrine {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      margin: 0;
 }
+
+#video {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;    /* Centre verticalement (si une hauteur est définie) */
+    width: 100%;            /* S'assure que la div prend toute la largeur */
+    margin: 20px auto;      /* Centre la div elle-même sur la page */
+    height: auto;           /* Ajuste automatiquement la hauteur */
+}
+      
+      #video video {
+        max-width: 100%; /* La vidéo ne dépassera pas la taille de l'écran */
+        height: auto;    /* Garde les proportions correctes */
+      }
+      
 .actualite-container {
   display: flex;
   flex-wrap: wrap; /* Permet aux éléments de revenir à la ligne si nécessaire */

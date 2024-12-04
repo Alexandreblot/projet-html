@@ -42,7 +42,7 @@ h1 {
 .team-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 .team-member {
@@ -50,7 +50,7 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 300px;
+  max-width: 400px;
   text-align: center;
 }
 .team-member img {
@@ -58,7 +58,6 @@ h1 {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  margin-bottom: 15px;
 }
 .team-member h3 {
   font-size: 1.5em;
@@ -66,6 +65,5 @@ h1 {
   color: #222;
 }
 .team-member p {
-  font-size: 0.9em;
-  color: #666;
+  font-size: 1em;
 }

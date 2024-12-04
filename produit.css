@@ -1,4 +1,4 @@
-@media screen and (min-width: 740px) {
+
   header,
   body,
   h1,
@@ -8,7 +8,7 @@
   a {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none;   /*pour éviter d'avoir des ennuis avec des styles*/
     list-style: none;
     overflow-x: hidden;
   }
@@ -21,9 +21,6 @@
   header {
     display: flex;
     flex-direction: column;
-  }
-  header img {
-    margin: 0;
   }
 
   #vitrine {
@@ -51,6 +48,7 @@
     display: flex;
     justify-content: center;
     gap: 35px;
+    flex-wrap: wrap;
   }
 
   .product-card {
@@ -69,8 +67,8 @@
   }
   .product-card img {
     margin: 10px;
-    width: 150px;
-    height: 200px;
+    width: 15vw;
+    height: 30vh;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -80,14 +78,30 @@
   }
 
   .product-card p {
+    text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5vmax;
     transition: 0.2s linear;
   }
-}
 .product-card:hover {
   background-color: #383838;
   color: #fff;
   transform: scale(1.05);
 }
+.btn{
+  background-color: rgb(237, 95, 95);
+  color: #333;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #333;
+  padding-right:20px;
+  padding-left:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
 

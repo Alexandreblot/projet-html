@@ -5,61 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire de Contact</title>
   <link href="Navbar.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-color: #f4f4f9;
-    }
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 500px;
-    }
-    h2 {
-      margin-bottom: 15px;
-      color: #333;
-    }
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    input, select, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .consent {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-    }
-    .consent input {
-      width: auto;
-      margin-right: 10px;
-    }
-  </style>
+  <link href="contact.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -72,10 +18,11 @@
         </div>
     <div class="navigation">
         <a href="equipe.html"><h2>L'équipe</h2></a>
-        <a href="contact.html"><h2>Contact</h2></a>
+        <a href="contacte.html"><h2>Contact</h2></a>
         <a href="a_propos.html"><h2>À propos</h2></a>
         </div>
     </nav>
+    <div class="form">
   <form action="/send-message" method="post">
     <h2>Contactez-nous</h2>
 
@@ -115,5 +62,6 @@
 
     <button type="submit">Envoyer</button>
   </form>
+  </div>
 </body>
 </html>

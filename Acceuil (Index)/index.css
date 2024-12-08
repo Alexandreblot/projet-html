@@ -46,17 +46,10 @@ h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
-.header-image {
-  width: 100%; /* S'étend sur toute la largeur */
-  height: auto; /* Garde les proportions */
-}
-
-/* Formulaire */
 main {
   display: flex;
-  justify-content: center; /* Centre le formulaire horizontalement */
-  align-items: flex-start; /* Commence en haut */
+  justify-content: center; 
+  align-items: flex-start;
   padding: 20px;
 }
 

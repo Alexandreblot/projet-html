@@ -1,0 +1,118 @@
+h1,
+ul,
+li,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  background-color: #f2e4d4; /*le body prend toute la place 100% avec une couleur*/ /**/
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /*2 "box" avec l'image et la navbar, elle prend toute la place et se met en collonne*/
+}
+#vitrine {
+  width: 100%;
+  height: 200px;
+  opacity: 0.35;   /*L'image en elle meme, */
+  object-fit: cover;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 300%;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.Histoire {
+  display: flex;  /*on défini un tableau flex*/
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* text au centre*/
+  flex-grow: 1;
+  flex-basis: 0;  /*Il laisse la place a l'image*/
+  padding: 10px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  width: 75%;  
+}
+.product-grid {
+  display: flex;
+  justify-content: center;   /*Les tableau*/
+  margin-left: 3%;
+  margin-right: 3%;
+  align-items: center;
+  flex-wrap: wrap;  /*ne sort pas de la page*/
+}
+.text-card {
+  font-size: 3vh;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;  /*Le texte*/
+}
+.Histoire-img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;   /*l'espace de l'image de l'hitsoire*/
+}
+.Histoire-img img {
+  border-radius: 20px;
+  width: 100%;     /*l'image en elle meme*/
+}
+.info-card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-bottom: 5%;                 /*les cartes pour les info*/
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;     /*un grille danns une grille pour mettre la photo au dessus du texte*/
+  margin-top: 40px;                     
+}
+.imginfo {
+  border-radius: 10px;
+  width: 100%;                       /*l'espace des images*/
+  height: 40vh;
+  object-fit: cover;
+}
+.text-card {
+  font-size: 3vh;
+  text-align: start;
+  margin: 3%;            /*Le texte les 3 cartes*/
+  flex-wrap: wrap;
+}
+.Titre-card {
+  text-decoration: bold;
+  font-size: 5vh;
+  text-align: left;          /*Le titre des 3 boites*/
+}
+@media screen and (max-width: 600px) {
+  .Histoire-img {
+    width: 80%;
+    height: 80%;            /*Pour que l'image ne devienne pas minuscule*/
+    object-fit: cover;
+  }
+}

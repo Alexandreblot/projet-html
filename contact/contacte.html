@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Contact</title>
+  <link href="contact.css" rel="stylesheet">
+  <link href="../footer navbar/footer.css" rel="stylesheet" />
+  <link href="../footer navbar/Navbar.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img src="../image/vitrine.jpg" alt="vitrine" id="vitrine">
+    <nav class="navbar">
+      <div class="menu">
+        <label for="bouton" class="menu-icon"><h2>☰</h2></label>
+                 <input type="checkbox" id="bouton">
+                           <ul class="nav-menu">
+                             <li class="nav-item"> <a href="../Equipe/equipe.html"><h3>L'équipe</h3></a> </li>
+                             <li class="nav-item"> <a href="../contact/contacte.html"><h3>Contact</h3></a> </li>
+                             <li class="nav-item"> <a href="../apropos/a_propos.html"><h3>À propos</h3></a> </li>
+                           </ul>
+        <a href="../index.html"><h2>Accueil</h2></a>
+        <a href="../Produits/produit.html"><h2>Nos produits</h2></a>
+        </div>
+    <div class="navigation">
+        <a href="../Equipe/equipe.html"><h2>L'équipe</h2></a>
+        <a href="contacte.html"><h2>Contact</h2></a>
+        <a href="../apropos/a_propos.html"><h2>À propos</h2></a>
+        </div>
+    </nav>
+  </header>
+    <div class="form">
+  <form action="/send-message" method="post">
+    <h2 id="contact">Contactez-nous</h2>
+
+    <label for="name">Nom complet :</label>
+    <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+
+    <label for="email">Adresse e-mail :</label>
+    <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+
+    <label for="phone">Numéro de téléphone :</label>
+    <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+
+    <label for="subject">Sujet :</label>
+    <select id="subject" name="subject" required>
+      <option value="">Sélectionnez un sujet</option>
+      <option value="support">Assistance technique</option>
+      <option value="sales">Informations sur un produit</option>
+      <option value="complaint">Réclamation</option>
+      <option value="other">Autre</option>
+    </select>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" placeholder="Décrivez votre demande..." rows="5" required></textarea>
+
+    <label for="attachment">Joindre un fichier :</label>
+    <input type="file" id="attachment" name="attachment" accept=".jpg,.png,.pdf">
+
+    <div class="consent">
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent">J'accepte que mes données soient utilisées pour traiter ma demande.</label>
+    </div>
+
+    <div class="consent">
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">Je souhaite recevoir les actualités et offres spéciales.</label>
+    </div>
+
+    <button type="submit">Envoyer</button>
+  </form>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>Nous somme une petite starup qui vendons des instruments de musique pour tous.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="../Acceuil (Index)/index.html">Accueil</a></li>
+              <li><a href="../contact/contacte.html">Contact</h2></li>
+              <li><a href="../apropos/a_propos.html">À propos</h2></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <a>Suivez-nous</a>
+            <div class="social-icons">
+              <br><a href="https://www.facebook.com/groups/elonmusk1/">Facebook</a>
+                <a href="https://x.com/elonmusk">Twitter</a>
+                <a href="https://www.instagram.com/elonmusk__official__/">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 MonSiteWeb. Tous droits réservés.</p>
+    </div>
+</footer>
+</body>
+</html>

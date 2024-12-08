@@ -69,3 +69,11 @@ body{
   font-size: 15px;
 }
 }
+
+.menu-image {
+  width: 50px; /* Ajuste la taille de l'image */
+  height: initial;
+  margin: 0 10px; /* Ajuste l'espacement autour de l'image */
+  vertical-align: middle; /* Aligne l'image avec le texte */
+}
+

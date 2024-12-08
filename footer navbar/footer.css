@@ -2,21 +2,21 @@
 .footer {
     background-color: #222;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 0;          /*La couleur du text et l'arriere plan*/
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1200px;                        /*la taille du contenu du footer */
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .footer-section {
     flex: 1;
-    margin: 10px;
+    margin: 10px;            
     min-width: 250px;
 }
 

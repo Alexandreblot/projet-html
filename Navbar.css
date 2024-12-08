@@ -14,7 +14,9 @@ body{
   text-transform: none;
   text-decoration: none;
   position: relative;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+
 }
 nav {
   width: 100%;
@@ -25,6 +27,7 @@ nav {
   margin-right: 10px;
   color: orange;
   cursor: pointer;
+  padding-left: 10px;
 }
 
 .navigation a {

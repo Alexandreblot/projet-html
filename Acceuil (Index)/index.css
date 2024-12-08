@@ -25,6 +25,9 @@ body{
       object-fit: cover;
       margin: 0;
 }
+h2 {
+  margin-left: 10px;
+}
 
 /* Header */
 header {

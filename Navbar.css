@@ -1,4 +1,4 @@
-header,
+header,label,
 body{
     margin: 0;
   padding: 0;
@@ -11,10 +11,11 @@ body{
   justify-content: space-between;
   align-items: center;
   background-color: #3b3535;
-  padding: 0px 10px;
   margin: 0;
   text-transform: none;
   text-decoration: none;
+  position: relative;
+  padding: 10px;
 }
 nav {
   width: 100%;
@@ -24,6 +25,7 @@ nav {
   font-size: 20px;
   margin-right: 10px;
   color: orange;
+  cursor: pointer;
 }
 
 .navigation a {
@@ -36,7 +38,10 @@ nav {
   gap: 30px;
   margin-right: 20px;
 }
-
+label{
+  align-items: center;
+  align-content: center;
+}
 .menu {
   display: flex;
   gap: 30px;
@@ -54,6 +59,12 @@ nav {
 .navigation a:hover {
   transform: scale(1.05);
 }
+
+.navbar input, .nav-menu, .dropdown{
+  display: none;
+}
+
+
 @media screen and (max-width: 740px) {
   .menu{
   align-content: center;
@@ -70,5 +81,30 @@ nav {
 }
 .menu a{
   font-size: 15px;
+}
+.navbar input, .nav-menu, .dropdown{
+  display: none;
+}
+[id=bouton]:checked + ul{
+    display: block;
+}
+.nav-menu{
+  background-color: #3b3535;
+  position: absolute;
+  top: 90px;
+  padding-left:10px ;
+  left: 0px;
+  right: 0;
+}
+
+.nav-item a, .drop-item a, .show{
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+
+.nav-menu a:hover, .show:hover{
+  transform: scale(1.05);
 }
 }

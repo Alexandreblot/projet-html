@@ -8,7 +8,9 @@
     min-height: 100vh;
     background-color: #f4f4f9;
   }
-
+body{
+  background:#f2e4d4;
+}
 
 header {
 display: flex;

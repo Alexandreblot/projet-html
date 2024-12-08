@@ -16,6 +16,9 @@ body{
   text-transform: none;
   text-decoration: none;
 }
+nav {
+  width: 100%;
+}
 
 .menu-icon {
   font-size: 20px;

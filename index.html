@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <link href="lecss.css" rel="stylesheet" />
-    <link href="Navbar.css" rel="stylesheet" />
+    <link href="Acceuil (Index)/index.css" rel="stylesheet" />
+    <link href="footer navbar/footer.css" rel="stylesheet" />
+    <link href="footer navbar/Navbar.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,34 +14,30 @@
       <img src="image/vitrine.jpg" alt="vitrine" id="vitrine">
       <nav class="navbar">
         <div class="menu">
-         <span class="menu-icon"><h2>☰</h2></span>
+          <label for="bouton" class="menu-icon"><h2>☰</h2></label>
+                   <input type="checkbox" id="bouton">
+                             <ul class="nav-menu">
+                               <li class="nav-item"> <a href="Equipe/equipe.html"><h3>L'équipe</h3></a> </li>
+                               <li class="nav-item"> <a href="contact/contacte.html"><h3>Contact</h3></a> </li>
+                               <li class="nav-item"> <a href="propos/a_propos.html"><h3>À propos</h3></a> </li>
+                             </ul>
           <a href="index.html"><h2>Accueil</h2></a>
-          <a href="produit.html"><h2>Nos produits</h2></a>
+          <a href="Produits/produit.html"><h2>Nos produits</h2></a>
           </div>
       <div class="navigation">
+          <a href="Equipe/equipe.html"><h2>L'équipe</h2></a>
+          <a href="contact/contacte.html"><h2>Contact</h2></a>
+          <a href="apropos/a_propos.html"><h2>À propos</h2></a>
           </div>
         </div>
-
-        <img src="image/tsunamusic.png" alt="logo" class="menu-image">
-
-        <ul class="navigation">
-          <li>
-            <a href="equipe.html"><h2>L'équipe</h2></a>
-          </li>
-          <li>
-            <a href="contacte.html"><h2>Contact</h2></a>
-          </li>
-          <li>
-            <a href="a_propos.html"><h2>À propos</h2></a>
-          </li>
-        </ul>
       </nav>
     </header>
     <div id="video">
-      <video src="video" controls width="500"></video>
+      <video src="video/Dcouvrez Notre Startup_ Vente d'Instruments de Musique en Ligne.mp4" controls width="500"></video>
     </div>
       <div id="actualite">
         <h1 class="">Actualité</h1>
+        <hr width="25%" color="black" >
         <div class="actualite-container">
           <div class="actualite-item text-from-left" id="Gibson">
             <h2>🎸 Lancement exclusif : La Gibson Phoenix - La guitare qui renaît de ses cordes</h2>
@@ -98,5 +95,34 @@
               <strong>Profitez-en avant le 1er décembre !</strong>
             </p>
           </div>
-      </body>
+        </div>
+          <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>À propos</h3>
+                    <p>Nous somme une petite starup qui vendons des instruments de musique pour tous.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                      <li><a href="../Acceuil (Index)/index.html">Accueil</a></li>
+                      <li><a href="../contact/contacte.html">Contact</h2></li>
+                      <li><a href="../apropos/a_propos.html">À propos</h2></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <a>Suivez-nous</a>
+                    <div class="social-icons">
+                      <br><a href="https://www.facebook.com/groups/elonmusk1/">Facebook</a>
+                        <a href="https://x.com/elonmusk">Twitter</a>
+                        <a href="https://www.instagram.com/elonmusk__official__/">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MonSiteWeb. Tous droits réservés.</p>
+            </div>
+        </footer>
+        </body>
+        </html>
         

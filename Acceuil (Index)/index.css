@@ -66,6 +66,7 @@ body{
   padding: 10px;
   background-color: aquamarine;
   font-size: 2em;
+  display: flex;
 }
 
 h1 {

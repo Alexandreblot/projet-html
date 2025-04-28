@@ -1,5 +1,6 @@
 function main() {
-    displayDateTime();
+    console.log("tralala")
+    // displayDateTime();
 }
 
 main();

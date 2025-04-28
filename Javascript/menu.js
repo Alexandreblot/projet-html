@@ -1,3 +1,9 @@
+function get2DContext(id) {
+  let canvas = document.getElementById("demo");
+  let context = canvas.getContext("2d");
+  return context;
+}
+
 function displayDateTime() {
   let tmp = get2DContext("temps");
   const event = new Date();

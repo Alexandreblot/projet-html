@@ -1,3 +1,5 @@
-function main() {}
+function main() {
+    displayDateTime();
+}
 
 main();

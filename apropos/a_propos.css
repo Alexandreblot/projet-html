@@ -12,6 +12,33 @@ a {
 body {
   width: 100%;
   background-color: #f2e4d4; /*le body prend toute la place 100% avec une couleur*/ /**/
+
+  #logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0x;
+  }
+  
+  #Logo {
+    height: 125px; 
+    width: auto;
+    object-fit: contain;
+    display: block;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .Logo {
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Logo {
+      height: 30px;
+    }
+  }
 }
 header {
   width: 100%;

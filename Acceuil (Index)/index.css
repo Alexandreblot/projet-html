@@ -62,10 +62,11 @@ body{
 
 /* Header */
 
-#time {
+#tempsh {
   padding: 10px;
+  padding-left: 3%;
   background-color: aquamarine;
-  font-size: 2em;
+  font-size: 2rem;
   display: flex;
 }
 

@@ -1,3 +1,4 @@
+let seconde = 0;
 function displayDateTime() {
   const event = new Date();
   let time = event.toLocaleTimeString("fr-FR");
@@ -5,4 +6,16 @@ function displayDateTime() {
   setInterval(displayDateTime, 1000);
 }
 
-displayDateTime();
+function displaycrementSeconds() {
+  seconde = seconde + 1;
+  document.getElementById("phrase").innerText = "vous etes sur la page depuis ";
+  document.getElementById("seconde").innerText = seconde + "s";
+}
+
+
+
+function main() {
+  setInterval(displaycrementSeconds,1000);
+  displayDateTime();
+}
+main();

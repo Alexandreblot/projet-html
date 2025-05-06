@@ -49,32 +49,27 @@ nav {
   padding-left: 10px;
 }
 
+.navbar {
+  position: relative;
+}
+
 #logo-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0x;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 #Logo {
-  height: 125px; 
-  width: auto;
-  object-fit: contain;
-  display: block;
-  
+  height: 100px; 
 }
 
-@media (max-width: 768px) {
-  .Logo {
-    height: 40px;
-  }
+/* Pour éviter que les autres éléments chevauchent le logo */
+.menu-icon,
+.navigation {
+  z-index: 5;
 }
 
-@media (max-width: 480px) {
-  .Logo {
-    height: 30px;
-  }
-}
 
 .navigation a {
   color: white;

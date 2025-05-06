@@ -13,6 +13,12 @@ a {
 body {
   background-color: #f2e4d4;
 }
+#logo{
+  width:25% ;
+  height: auto;
+  margin: auto;
+  
+}
 header {
   display: flex;
   flex-direction: column;

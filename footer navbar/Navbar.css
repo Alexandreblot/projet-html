@@ -38,7 +38,9 @@ nav {
 }
 
 #Logo {
-  height: 125px; 
+  height: 125px;
+  margin: 0 auto;
+  cursor: pointer;
   width: auto;
   object-fit: contain;
   display: block;

@@ -13,22 +13,6 @@ a {
 body {
   background-color: #f2e4d4;
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-#logo{
-  width:25% ;
-  height: auto;
-  margin: auto;
-    
-}
-
 }
 header {
   display: flex;

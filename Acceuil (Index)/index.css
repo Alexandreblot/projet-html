@@ -37,14 +37,6 @@ body{
 
 /* Header */
 
-#tempsh {
-  padding: 10px;
-  padding-left: 3%;
-  background-color: aquamarine;
-  font-size: 2rem;
-  display: flex;
-}
-
 h1 {
   text-align: center;
   font-size: 4em;

@@ -22,19 +22,13 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  nav #logo {
-    cursor: pointer;
-  }
-
-  nav a {
-    display: inline-block;
-  }
-}
 #logo{
   width:25% ;
   height: auto;
   margin: auto;
-  
+    
+}
+
 }
 header {
   display: flex;

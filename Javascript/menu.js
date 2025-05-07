@@ -8,8 +8,8 @@ function displayDateTime() {
 
 function displaycrementSeconds() {
   seconde = seconde + 1;
-  document.getElementById("phrase2").innerText = "=== vous etes sur la page depuis ";
-  document.getElementById("seconde").innerText = seconde + "s ===";
+  document.getElementById("phrase2").innerText = "vous etes sur la page depuis ";
+  document.getElementById("seconde").innerText = seconde + "s";
 }
 
 

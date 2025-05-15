@@ -46,6 +46,9 @@ h1 {
   flex-wrap: wrap;
 }
 .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);         /*les 2 boites en elle meme*/
@@ -53,12 +56,7 @@ h1 {
   max-width: 400px;
   text-align: center;
 }
-.team-member img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;            /*Les images*/
-  object-fit: cover;
-}
+
 .team-member h3 {
   font-size: 2em;
   margin-bottom: 10px;     /*le titre*/
@@ -66,4 +64,26 @@ h1 {
 }
 .team-member p {
   font-size: 1.5em;
+  position: relative; 
+  }
+  
+  
+.team-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;            /*Les images*/
+  position: relative;
 }
+.team-photo img {
+  width: 100%;
+}
+.grattage-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+  

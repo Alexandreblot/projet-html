@@ -4,13 +4,12 @@
     <link href="../footer navbar/footer.css" rel="stylesheet" />
     <link href="../footer navbar/Navbar.css" rel="stylesheet" />
     <script src="../Javascript/main.js" defer></script>
+    <script src="../Javascript/equipe.js" defer></script>
     <script src="../Javascript/menu.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L'équipe</title>
-  </head>
-  <body>
 <div id="horloge-container">
     <a id="phrase1"></a>
     <b><p id="time"></p></b>
@@ -49,14 +48,23 @@
         <hr width="25%" color="black" >
         <div class="team-container">
             <div class="team-member">
-                <img src="../image/PERSOA.jpg" alt="Photo  de JULES">
+                <div class="team-photo">
+                    <img src="../image/PERSOA.jpg" alt="Photo de JULES">
+                    <canvas class="grattage-canvas"></canvas>
+                </div>
                 <h3>Jules CHEVRIER</h3>
                 <p>Développeur web avec une passion pour la musique et les technologies modernes.</p>
+                
             </div>
             <div class="team-member">
+              <div>
+                <div class="team-photo"> <!-- Fixed missing closing quote -->
                 <img src="../image/PERSOB.jpg" alt="Photo de ALEXANDRE">
+                <canvas class="grattage-canvas"></canvas>
+                </div>
                 <h3>Alexandre BLOT</h3>
                 <p>Chef de projet spécialisée dans la gestion d'équipes agiles et passioné par la musique.</p>
+                     
             </div>
         </div>
     </section>
@@ -89,7 +97,5 @@
   </footer>
 </body>
 </html>
- 
-Log in or sign up to view
-See posts, photos and more on Facebook.
- 
+</body>
+</html>

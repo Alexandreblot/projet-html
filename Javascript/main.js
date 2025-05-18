@@ -35,7 +35,7 @@ function setupMenuItemHighlight() {
         link.addEventListener('click', function(e) {
             // Sauvegarde l'ancienne couleur de fond
             const oldColor = window.getComputedStyle(link).backgroundColor;
-            // Choisis la nouvelle couleur (par exemple, orange)
+            // Choisis la nouvelle couleur
             const newColor = 'yellow';
 
             // Change la couleur de fond de l'item cliqué

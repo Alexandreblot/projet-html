@@ -1,31 +1,23 @@
 function delayNavigation(event) {
-    event.preventDefault(); // Empêche la navigation immédiate
-    const targetUrl = event.currentTarget.href; // Récupère l'URL cible
+    // Ne pas agir sur les liens externes ou ancres
+    const url = event.currentTarget.getAttribute("href");
+    if (!url || url.startsWith("http") || url.startsWith("#") || url.startsWith("mailto:")) return;
 
-    // Affiche le loader
+    event.preventDefault();
     const loader = document.getElementById("loader");
-    if (loader) {
-        loader.classList.remove("hidden");
-    }
+    if (loader) loader.classList.remove("hidden");
 
-    // Délai de 2 secondes avant la navigation
     setTimeout(() => {
-        if (loader) {
-            loader.classList.add("hidden"); // Masque le loader avant de naviguer
-        }
-        window.location.href = targetUrl; // Navigue vers l'URL après 2 secondes
+        if (loader) loader.classList.add("hidden");
+        window.location.href = url;
     }, 2000);
 }
 
 function setupNavigationDelay() {
-    const links = document.querySelectorAll("a[href]"); // Sélectionne tous les liens avec un attribut href
-    links.forEach((link) => {
-        link.addEventListener("click", delayNavigation); // Ajoute un écouteur d'événement
+    const links = document.querySelectorAll("a[href]");
+    links.forEach(link => {
+        link.addEventListener("click", delayNavigation);
     });
 }
 
-function main() {
-    setupNavigationDelay(); // Configure le délai de navigation
-}
-
-main();
+document.addEventListener("DOMContentLoaded", setupNavigationDelay);

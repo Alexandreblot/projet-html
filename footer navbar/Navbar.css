@@ -10,39 +10,37 @@ body{
     display: none;
 }
 #loader {
-    display: none; /* Masqué par défaut */
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 10000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(255,255,255,0.9);
+  z-index: 10000;
+  flex-direction: column;
 }
-
+#loader span {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#loader:not(.hidden) {
+  display: flex;
+}
 #loader::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    border: 5px solid #ccc;
-    border-top: 5px solid #333;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+  content: none; /* Désactive le rond animé */
 }
-
-.hidden {
-    display: none;
+.loader-logo {
+  width: 150px;
+  height: 250px;
+  animation: spin 1.2s linear infinite;
+  display: block;
+  margin: 0 auto 20px auto;
 }
-
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  to { transform: rotate(360deg); }
 }
 
 #horloge-container {
@@ -104,7 +102,6 @@ nav {
   height: 100px; 
 }
 
-/* Pour éviter que les autres éléments chevauchent le logo */
 .menu-icon,
 .navigation {
   z-index: 5;
@@ -195,5 +192,4 @@ nav {
 .nav-menu a:hover, .show:hover{
   transform: scale(1.05);
 }
-
 }

@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="Javascript/main.js" defer></script>
+    <script src="index.js" defer></script>
     <script src="Javascript/menu.js" defer></script>
     <script src="" defer></script>
     <title>Accueil</title>
@@ -21,36 +22,36 @@
     <b><a id="seconde"></a></b></p>
 </div>
     <header>
-      <img src="image/vitrine.jpg" alt="vitrine" id="vitrine">
-      <div class="vitrine-text">
-        <h1>Tsunamusique</h1>
-        <p>Une musique qui vous fait vibrer</p>
-      </div>
-      <nav class="navbar">
-        <div class="menu">
-          <label for="bouton" class="menu-icon"><h2>☰</h2></label>
-                   <input type="checkbox" id="bouton">
-                             <ul class="nav-menu">
-                               <li class="nav-item"> <a href="Equipe/equipe.html"><h3>L'équipe</h3></a> </li>
-                               <li class="nav-item"> <a href="contact/contacte.html"><h3>Contact</h3></a> </li>
-                               <li class="nav-item"> <a href="propos/a_propos.html"><h3>À propos</h3></a> </li>
-                             </ul>
-          <a href="index.html"><h2>Accueil</h2></a>
-          <a href="Produits/produit.html"><h2>Nos produits</h2></a>
+  <div class="vitrine-overlay">
+    <img src="image/vitrine.jpg" alt="vitrine" id="vitrine">
+  </div>
+  <div class="vitrine-text">
+    <h1>Tsunamusique</h1>
+    <p id="slogan">Une musique qui vous fait vibrer</p>
+  </div>
+</header>
 
-          <a href="index.html" id="logo-link">
-          <img src="image/tsunamusic.png" alt="Logo" id="Logo">
-          </div>
-          
-      <div class="navigation">
-        
-          <a href="Equipe/equipe.html"><h2>L'équipe</h2></a>
-          <a href="contact/contacte.html"><h2>Contact</h2></a>
-          <a href="apropos/a_propos.html"><h2>À propos</h2></a>
-          </div>
-        </div>
-      </nav>
-    </header>
+<nav class="navbar">
+  <div class="menu">
+    <label for="bouton" class="menu-icon"><h2>☰</h2></label>
+    <input type="checkbox" id="bouton">
+    <ul class="nav-menu">
+      <li class="nav-item"> <a href="Equipe/equipe.html"><h3>L'équipe</h3></a> </li>
+      <li class="nav-item"> <a href="contact/contacte.html"><h3>Contact</h3></a> </li>
+      <li class="nav-item"> <a href="propos/a_propos.html"><h3>À propos</h3></a> </li>
+    </ul>
+    <a href="index.html"><h2>Accueil</h2></a>
+    <a href="Produits/produit.html"><h2>Nos produits</h2></a>
+    <a href="index.html" id="logo-link">
+      <img src="image/tsunamusic.png" alt="Logo" id="Logo">
+    </a>
+  </div>
+  <div class="navigation">
+    <a href="Equipe/equipe.html"><h2>L'équipe</h2></a>
+    <a href="contact/contacte.html"><h2>Contact</h2></a>
+    <a href="apropos/a_propos.html"><h2>À propos</h2></a>
+  </div>
+</nav>
     <div id="loader" class="hidden">
   <span>Chargement...</span>
   <img src="image/tsunamusic.png" alt="Chargement..." class="loader-logo">

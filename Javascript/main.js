@@ -3,12 +3,19 @@ function delayNavigation(event) {
     const url = event.currentTarget.getAttribute("href");
     if (!url || url.startsWith("http") || url.startsWith("#") || url.startsWith("mailto:")) return;
 
+<<<<<<< Updated upstream
 if (url.includes("equipe.html")) {
         const confirmation = confirm("Voulez-vous vraiment accéder à la page Équipe ? (c jules qui l'a fait)");
         if (!confirmation) {
             event.preventDefault();
             return; // Annule la navigation si l'utilisateur refuse
         }
+=======
+    // Affiche le loader
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.style.display = "flex";
+>>>>>>> Stashed changes
     }
 
     event.preventDefault();

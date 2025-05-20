@@ -1,4 +1,4 @@
-function main() {
+function Gratage(){
   const canvases = document.querySelectorAll(".grattage-canvas");
 
   canvases.forEach((canvas) => {
@@ -63,4 +63,73 @@ function main() {
   });
 }
 
+function prompt(){
+  const adminName = window.prompt("Entrez le nom du profil administrateur :", "admin");
+  if (adminName === "admin") {
+    const adminPwd = window.prompt("Entrez le mot de passe du profil administrateur :", "admin_pwd");
+    if (adminPwd === "admin_pwd") {
+      // Activer le mode édition
+      const editBtn = document.getElementById("edit-btn");
+      if (editBtn) {
+        editBtn.classList.add("active");
+        editBtn.style.backgroundColor = "#4caf50";
+      }
+
+      // Rendre les noms éditables
+      document.querySelectorAll(".member-name").forEach((el) => {
+        el.contentEditable = "true";
+        el.style.borderBottom = "1px dashed #888";
+      });
+
+      // Afficher le bouton "ajouter un membre"
+      let addBtn = document.getElementById("add-member-btn");
+      if (!addBtn) {
+        addBtn = document.createElement("button");
+        addBtn.id = "add-member-btn";
+        addBtn.textContent = "Ajouter un membre";
+        addBtn.style.margin = "10px";
+        addBtn.onclick = function () {
+          // Ajoutez ici la logique pour ajouter un membre
+          alert("Ajout d'un membre (fonctionnalité à implémenter)");
+        };
+        document.body.appendChild(addBtn);
+        }
+
+        // Ajouter gestion du bouton édition pour quitter le mode édition
+        const editBtn2 = document.getElementById("edit-btn");
+        if (editBtn2) {
+          editBtn2.onclick = function () {
+            if (editBtn2.classList.contains("active")) {
+              if (window.confirm("Voulez-vous vraiment quitter le mode édition ?")) {
+                editBtn2.classList.remove("active");
+                editBtn2.style.backgroundColor = "";
+                document.querySelectorAll(".member-name").forEach((el) => {
+                  el.contentEditable = "false";
+                  el.style.borderBottom = "";
+                });
+                const addBtn = document.getElementById("add-member-btn");
+                if (addBtn) addBtn.remove();
+              }
+            }
+          };
+        }
+      }
+  }
+}
+
+function main() {
+  Gratage();
+
+  document.querySelectorAll('.team__member').forEach(member => {
+  member.style.cursor = 'pointer';
+  member.addEventListener('click', () => {
+      const name = member.dataset.name;
+      window.location.href = `profil-${name}.html`; // Redirection vers une page
+    });
+  });
+
+  prompt();
+}
+
 window.addEventListener("DOMContentLoaded", main);
+

@@ -3,7 +3,7 @@ function displayDateTime() {
   const event = new Date();
   let time = event.toLocaleTimeString("fr-FR");
   document.getElementById("time").innerText = " Il est " + time;
-  setInterval(displayDateTime, 1000);
+  console.log("Il est ");
 }
 
 function displaycrementSeconds() {
@@ -19,6 +19,6 @@ function displaycrementSeconds() {
 
 function main() {
   displaycrementSeconds();
-  displayDateTime();
+  setInterval(displayDateTime, 1000);
 }
 main();

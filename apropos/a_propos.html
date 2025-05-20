@@ -6,6 +6,7 @@
     <link href="../footer navbar/Navbar.css" rel="stylesheet" />
     <script src="../Javascript/main.js" defer></script>
     <script src="../Javascript/menu.js" defer></script>
+    <script src="a_propos.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +23,30 @@
     <a id="phrase2"></a>
     <b><a id="seconde"></a></b></p>
 </div>
+<div id="modal-guitariste" class="hidden" href="#guitariste2" onclick="modal(event)">
+  <div class="modal-content">
+    <h2>Un guitariste</h2>
+    <img src="../image/guitariste.png" alt="Un guitariste" style="max-width: 80%; display: block; margin: 20px auto;border-radius: 10px;">
+    <p>Nous somme connu dans le monde des guitaristes.</p>
+  </div>
+</div>
+
+<div id="modal-musique" class="hidden" href="#musique2" onclick="modal(event)">
+  <div class="modal-content">
+    <h2>Une colab</h2>
+    <img src="../image/musique.png" alt="Une colab" style="max-width: 80%; display: block; margin: 20px auto;border-radius: 10px;">
+    <p>Nous somme en colaboration avec isen musique.</p>
+  </div>
+</div>
+
+<div id="modal-gojira" class="hidden" href="#gojira2" onclick="modal(event)">
+  <div class="modal-content">
+    <h2>Gojira</h2>
+    <img src="../image/gojira.png" alt="Gojira" style="max-width: 80%; display: block; margin: 20px auto;border-radius: 10px;">
+    <p>C'est nous les fameux, très connu, producteurs de gojira.</p>
+  </div>
+</div>
+
     <header>
       <img src="../image/vitrine.jpg" alt="vitrine" id="vitrine">
       <nav class="navbar">
@@ -69,7 +94,7 @@
         <div class="info-card">
           <img src="../image/guitariste.png" class="imginfo">
             <div class="text-card">
-            <p class="Titre-card">Un guitariste<hr width="40%" align="center"></p>
+            <p class="Titre-card" href="#guitariste" style="cursor:pointer;" onclick="modal(event)">Un guitariste<hr width="40%" align="center"></p>
             <br>
             <p>Nous somme connu dans le monde des guitaristes.</p>
             </div>
@@ -79,7 +104,7 @@
         <div class="info-card">
           <img src="../image/musique.png" class="imginfo">
             <div class="text-card">
-            <p class="Titre-card">Une colab<hr width="40%" align="center"></p>
+            <p class="Titre-card" href="#musique" style="cursor:pointer;" onclick="modal(event)">Une colab<hr width="40%" align="center"></p>
             <br>
             <p>Nous somme en colaboration avec isen musique.</p>
             </div>
@@ -89,7 +114,7 @@
         <div class="info-card">
           <img src="../image/gojira.png" class="imginfo">
             <div class="text-card">
-            <p class="Titre-card">Gojira<hr width="40%" align="center"></p>
+            <p class="Titre-card" href="#gojira" style="cursor:pointer;" onclick="modal(event)">Gojira<hr width="40%" align="center"></p>
             <br>
             <p>C'est nous les fameux, très connu, producteurs de gojira.</p>
             </div>
@@ -123,4 +148,4 @@
         </div>
     </footer>
   </body>
-</html>
+</htm

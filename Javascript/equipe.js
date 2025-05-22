@@ -63,63 +63,92 @@ function Gratage(){
   });
 }
 
-function prompt(){
-  const adminName = window.prompt("Entrez le nom du profil administrateur :", "admin");
-  if (adminName === "admin") {
-    const adminPwd = window.prompt("Entrez le mot de passe du profil administrateur :", "admin_pwd");
-    if (adminPwd === "admin_pwd") {
-      // Activer le mode édition
-      const editBtn = document.getElementById("edit-btn");
-      if (editBtn) {
-        editBtn.classList.add("active");
-        editBtn.style.backgroundColor = "#4caf50";
-      }
+function enableEditMode() {
+    isEditing = true;
+    const editBtn = document.getElementById("editButton");
+    editBtn.textContent = "Quitter le mode édition";
+    editBtn.style.backgroundColor = "red";
 
-      // Rendre les noms éditables
-      document.querySelectorAll(".member-name").forEach((el) => {
-        el.contentEditable = "true";
-        el.style.borderBottom = "1px dashed #888";
-      });
+    // Rendre les noms éditables
+    document.querySelectorAll(".team-member-info h3").forEach(h3 => {
+        h3.contentEditable = "true";
+        h3.style.border = "1px dashed gray";
+    });
 
-      // Afficher le bouton "ajouter un membre"
-      let addBtn = document.getElementById("add-member-btn");
-      if (!addBtn) {
-        addBtn = document.createElement("button");
-        addBtn.id = "add-member-btn";
+    // Ajouter le bouton "Ajouter un membre"
+    if (!document.getElementById("addMemberButton")) {
+        const addBtn = document.createElement("button");
         addBtn.textContent = "Ajouter un membre";
-        addBtn.style.margin = "10px";
-        addBtn.onclick = function () {
-          // Ajoutez ici la logique pour ajouter un membre
-          alert("Ajout d'un membre (fonctionnalité à implémenter)");
-        };
-        document.body.appendChild(addBtn);
-        }
+        addBtn.id = "addMemberButton";
+        addBtn.style.margin = "1rem";
+        addBtn.onclick = addMember;
+        document.querySelector(".team-section").appendChild(addBtn);
+    }
 
-        // Ajouter gestion du bouton édition pour quitter le mode édition
-        const editBtn2 = document.getElementById("edit-btn");
-        if (editBtn2) {
-          editBtn2.onclick = function () {
-            if (editBtn2.classList.contains("active")) {
-              if (window.confirm("Voulez-vous vraiment quitter le mode édition ?")) {
-                editBtn2.classList.remove("active");
-                editBtn2.style.backgroundColor = "";
-                document.querySelectorAll(".member-name").forEach((el) => {
-                  el.contentEditable = "false";
-                  el.style.borderBottom = "";
-                });
-                const addBtn = document.getElementById("add-member-btn");
-                if (addBtn) addBtn.remove();
-              }
-            }
-          };
-        }
-      }
-  }
+    // Ajouter un bouton suppression à chaque carte
+    document.querySelectorAll(".team-member").forEach(member => {
+        addDeleteButton(member);
+    });
 }
+function disableEditMode() {
+    isEditing = false;
+    const editBtn = document.getElementById("editButton");
+    editBtn.textContent = "En savoir plus";
+    editBtn.style.backgroundColor = "";
+
+    // Rendre les noms non éditables
+    document.querySelectorAll(".team-member-info h3").forEach(h3 => {
+        h3.contentEditable = "false";
+        h3.style.border = "none";
+    });
+
+    // Supprimer le bouton d’ajout
+    const addBtn = document.getElementById("addMemberButton");
+    if (addBtn) addBtn.remove();
+
+    // Supprimer tous les boutons suppression
+    document.querySelectorAll(".delete-button").forEach(btn => btn.remove());
+}
+
+function addMember() {
+    const container = document.getElementById("teamContainer");
+
+    const member = document.createElement("div");
+    member.className = "team-member";
+
+    member.innerHTML = `
+        <div class="team-photo">
+            <img src="../image/default.jpg" alt="Photo par défaut">
+            <canvas class="grattage-canvas"></canvas>
+        </div>
+        <div class="team-member-info">
+            <h3 contenteditable="true">Votre Nom</h3>
+            <p>Votre description...</p>
+        </div>
+    `;
+    addDeleteButton(member);
+    container.appendChild(member);
+}
+
+function addDeleteButton(memberElement) {
+    if (memberElement.querySelector(".delete-button")) return;
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "🗑️";
+        deleteBtn.className = "delete-button";
+        deleteBtn.style.marginTop = "0.5rem";
+        deleteBtn.onclick = () => memberElement.remove();
+        memberElement.querySelector(".team-member-info").appendChild(deleteBtn);
+}
+
+
+
+function main() {
+    grattage();
+}
+
 
 function main() {
   Gratage();
-
   document.querySelectorAll('.team__member').forEach(member => {
   member.style.cursor = 'pointer';
   member.addEventListener('click', () => {
@@ -127,6 +156,29 @@ function main() {
       window.location.href = `profil-${name}.html`; // Redirection vers une page
     });
   });
+  let isEditing = false;
+
+  document.getElementById("editButton").addEventListener("click", function () {
+    if (!isEditing) {
+        const username = prompt("Entrez le nom d'utilisateur administrateur :");
+        if (username !== "admin") {
+            alert("Nom d'utilisateur incorrect.");
+            return;
+        }
+
+        const password = prompt("Entrez le mot de passe administrateur :");
+        if (password !== "admin_pwd") {
+            alert("Mot de passe incorrect.");
+            return;
+        }
+
+        enableEditMode();
+    } else {
+        disableEditMode();
+    }
+});
+
+  
 
   prompt();
 }

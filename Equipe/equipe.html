@@ -50,28 +50,29 @@
     <section class="team-section">
         <h1 class="team-title">Notre Équipe</h1>
         <hr width="25%" color="black" >
-        <div class="team-container">
+        <div class="team-container" id="teamContainer">
             <div class="team-member">
                 <div class="team-photo">
                     <img src="../image/PERSOA.jpg" alt="Photo de JULES">
                     <canvas class="grattage-canvas"></canvas>
                 </div>
-                <h3>Jules CHEVRIER</h3>
-                <p>Développeur web avec une passion pour la musique et les technologies modernes.</p>
-                
-            </div>
-            <div class="team-member">
-              <div>
-                <div class="team-photo"> 
-                <img src="../image/PERSOB.jpg" alt="Photo de ALEXANDRE">
-                <canvas class="grattage-canvas"></canvas>
+                <div class="team-member-info">
+                  <h3>Jules CHEVRIER</h3>
+                  <p>Développeur web avec une passion pour la musique et les technologies modernes.</p>
+                  <button id="editButton">edit mode</button>
                 </div>
-                </div>
-                <h3>Alexandre BLOT</h3>
-                <p>Chef de projet spécialisée dans la gestion d'équipes agiles et passioné par la musique.</p>
-                <button onclick="prompt()">En savoir plus</button>
             </div>
-        </div>
+            <div class="team-member" id="teamContainer">
+                <div class="team-photo">
+                    <img src="../image/PERSOB.jpg" alt="Photo de ALEXANDRE">
+                    <canvas class="grattage-canvas"></canvas>
+                </div>
+                <div class="team-member-info">
+                    <h3>Alexandre BLOT</h3>
+                    <p>Chef de projet spécialisée dans la gestion d'équipes agiles et passioné par la musique.</p>
+                    <button id="editButton">edit mode</button>
+                </div>
+            </div>
     </section>
     <footer class="footer">
       <div class="footer-container">

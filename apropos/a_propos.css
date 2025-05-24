@@ -9,12 +9,14 @@ a {
   list-style: none;
   overflow-x: hidden;
 }
-#modal-guitariste.hidden {
+#modal-guitariste.hidden,#modal-musique.hidden,#modal-gojira.hidden {
   display: none;
   background: rgb(255, 0, 0);
 }
 
-#modal-guitariste {
+#modal-guitariste,
+#modal-musique,
+#modal-gojira {
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
@@ -27,13 +29,26 @@ a {
   align-items: center;
 }
 .modal-content {
-  background-color: #f2e4d4;;
+  background-color: #eec3c3;;
   border-radius: 10px;
   padding: 20px;
   width: 80%;
-  max-width: 400px;
+  max-width: 600px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   align-items: center;
+}
+
+.modal-content h2 {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
 }
 
 body {

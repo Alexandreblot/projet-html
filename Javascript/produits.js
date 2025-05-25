@@ -23,14 +23,49 @@ function toggleProductImage(imgElement, imgSrc1, imgSrc2) {
     imgElement.src = (imgElement.src.endsWith(imgSrc1)) ? imgSrc2 : imgSrc1;
 }
 
-// Exemple d'utilisation :
-// <img src="img1.jpg" onclick="toggleProductImage(this, 'img1.jpg', 'img2.jpg')" />
+const productList = [
+    {
+        name: "Ukulélé",
+        img1: "../image/quelques-ukuleles.jpg",
+        img2: "../image/ukulele2.jpg",
+        price :"75"
+    
+    },
+    {
+        name: "Piano à queue",
+        img1: "../image/piano.jpg",
+        img2: "../image/piano2.jpg",
+        price :"1200"
+    },
 
-// --- Filtrage des produits ---
-const products = [
-    // Exemple de structure produit
-    // { name: 'Produit 1', theme: 'Tech', price: 50, date: '2024-06-01', img1: 'img1.jpg', img2: 'img2.jpg' }
-    // Remplir avec vos produits
+    {
+        name: "Une ampli",
+        img1: "../image/ampli.jpg",
+        img2: "../image/ampli2.jpg",
+        price: "100"
+    },
+
+    {
+        name: "Une guitar basse ",
+        img1: "../image/guitarbass.jpg",
+        img2: "../image/guitarbass2.jpg",
+        price: "999"
+    },
+    
+    {
+        name: "Une Harpe",
+        img1: "../image/Harpe.jpg",
+        img2: "../image/Harpe2.jpg",
+        price:"600"
+    },
+
+    {
+        name: "Une Batterie",
+        img1: "../image/Batterie.jpg",
+        img2: "../image/Batterie2.jpg",
+        price:"1000"
+    },
+
 ];
 
 // Fonction de filtrage
@@ -74,14 +109,24 @@ function displayProducts(productList) {
         div.className = 'product';
         div.innerHTML = `
             <img src="${product.img1}" onclick="toggleProductImage(this, '${product.img1}', '${product.img2}')">
-            <h3>${product.name}</h3>
-            <p>Thème : ${product.theme}</p>
-            <p>Prix : ${product.price} €</p>
-            <p>Date : ${product.date}</p>
-        `;
+            <h3>${product.name}</h3
+            <h3>${product.price}<h3>`;
+    
+
         container.appendChild(div);
     });
 }
+
+
+function toggleProductImage(imgElement, img1, img2) {
+    imgElement.src = (imgElement.src.includes(img1)) ? img2 : img1;
+}
+
+// Appelle la fonction au chargement
+document.addEventListener("DOMContentLoaded", () => {
+    displayProducts(productList);
+});
+
 
 // Initialisation de l'affichage
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,32 +1,34 @@
-// Sélectionner tous les éléments contenant un numéro de téléphone (ex: classe 'phone-number')
-document.querySelectorAll('.phone-number').forEach(function(element) {
-    element.addEventListener('copy', function(e) {
-        // Empêcher le comportement par défaut pour personnaliser le prompt
-        e.preventDefault();
-        // Récupérer le numéro copié
-        const phoneNumber = element.textContent.trim();
-        // Afficher le prompt
-        const userInput = prompt(
-            `Si vous voulez appeler ce numéro :\n${phoneNumber},\nentrez le de nouveau dans le champ ci-dessous puis validez`
-        );
-        if (userInput && userInput.trim() === phoneNumber) {
-            console.log(`vous appelez ce numéro : ${phoneNumber}`);
-            // Jouer la sonnerie
-            playRingtone(5); // 5 secondes
-        }
-        // Copier le numéro dans le presse-papier malgré tout
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(phoneNumber);
-        }
-    });
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneElements = document.querySelectorAll(".phone-number");
+  const confirmationSection = document.getElementById("confirmation-section");
+  const copiedNumberSpan = document.getElementById("copied-number");
+  const inputField = document.getElementById("phone-input");
+  const validateButton = document.getElementById("validate-button");
+  const ringtone = document.getElementById("ringtone");
 
-// Fonction pour jouer une sonnerie pendant 'duration' secondes
-function playRingtone(duration) {
-    const audio = new Audio('https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa6c3e.mp3'); // Sonnerie libre de droits
-    audio.play();
-    setTimeout(() => {
-        audio.pause();
-        audio.currentTime = 0;
-    }, duration * 1000);
-}
+  phoneElements.forEach(el => {
+    el.addEventListener("copy", () => {
+      const number = el.dataset.number;
+      copiedNumberSpan.textContent = number;
+      confirmationSection.style.display = "block";
+      inputField.value = "";
+    });
+  });
+
+  validateButton.addEventListener("click", () => {
+    const enteredNumber = inputField.value.trim();
+    const expectedNumber = copiedNumberSpan.textContent;
+
+    if (enteredNumber === expectedNumber) {
+      console.log(`vous appelez ce numéro : ${enteredNumber}`);
+      ringtone.play();
+
+      setTimeout(() => {
+        ringtone.pause();
+        ringtone.currentTime = 0;
+      }, 5000);
+    } else {
+      alert("Le numéro saisi ne correspond pas.");
+    }
+  });
+});

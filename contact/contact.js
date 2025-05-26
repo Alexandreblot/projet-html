@@ -82,7 +82,19 @@ pfcButtons.forEach(btn => {
             (user === "ciseaux" && ordi === "feuille")
         ) {
             document.getElementById("pfc-result").classList.remove("hidden");
-        } else {
+            setTimeout(() => {
+                document.getElementById("pfc-result").classList.add("hidden");
+                modal.classList.add("hidden");
+            }, 4000);
+        } 
+        else if (user === ordi) {
+            document.getElementById("pfc-tie").classList.remove("hidden");
+            setTimeout(() => {
+                document.getElementById("pfc-tie").classList.add("hidden");
+                modal.classList.add("hidden");
+            }, 2000);
+        }
+        else {
             document.getElementById("pfc-close").classList.remove("hidden");
             setTimeout(() => {
                 location.reload();

@@ -80,42 +80,27 @@ function filterProducts(filters) {
     });
 }
 
-// Exemple de gestion du formulaire de filtre
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('filterForm');
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const filters = {
-                name: form.elements['name'].value,
-                theme: form.elements['theme'].value,
-                minPrice: parseFloat(form.elements['minPrice'].value) || undefined,
-                maxPrice: parseFloat(form.elements['maxPrice'].value) || undefined,
-                date: form.elements['date'].value
-            };
-            const filtered = filterProducts(filters);
-            displayProducts(filtered);
-        });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".toggle-image");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      const currentSrc = img.src;
+      const altSrc = img.getAttribute("data-alt-src");
+
+      if (!altSrc) return;
+
+      img.setAttribute("data-alt-src", currentSrc);
+      img.src = altSrc;
+    });
+  });
 });
 
-// Fonction d'affichage des produits (à adapter selon votre HTML)
-function displayProducts(productList) {
-    const container = document.getElementById('productsContainer');
-    if (!container) return;
-    container.innerHTML = '';
-    productList.forEach(product => {
-        const div = document.createElement('div');
-        div.className = 'product';
-        div.innerHTML = `
-            <img src="${product.img1}" onclick="toggleProductImage(this, '${product.img1}', '${product.img2}')">
-            <h3>${product.name}</h3
-            <h3>${product.price}<h3>`;
-    
 
-        container.appendChild(div);
-    });
-}
+
+
+
+
 
 
 function toggleProductImage(imgElement, img1, img2) {

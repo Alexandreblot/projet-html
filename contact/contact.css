@@ -1,0 +1,196 @@
+body, h1, ul, li, p, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+body{
+  background:#f2e4d4;
+  
+}
+
+header {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+nav {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around; /* Espacement égal entre les items */
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#vitrine {
+width: 100%;
+height: 200px;
+opacity: 0.35;
+object-fit: cover;
+margin: 0;
+}
+
+
+
+.form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2e4d4;
+  }
+
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    max-width: 500px;
+  }
+  #contact {
+    margin-bottom: 15px;
+    color: #333;
+
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .consent {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .consent input {
+    width: auto;
+    margin-right: 10px;
+  }
+  .input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.input-icon {
+  color: #888;
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1em;
+  resize: none;
+}
+
+.input-group textarea {
+  min-height: 80px;
+}
+
+button[type="submit"] {
+  float: right;
+  background-color: #185adb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 28px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:disabled {
+  background: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.95em;
+  min-height: 18px;
+  margin-bottom: 5px;
+}
+
+#modal-jeux.hidden {
+  display: none;
+  background: rgb(255, 0, 0);
+}
+
+#pfc-result.hidden {
+  display: none;
+  background: rgb(255, 0, 0);
+}
+
+#pfc-close.hidden {
+  display: none;
+  background: rgb(255, 0, 0);
+}
+
+#modal-jeux {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: #eec3c3;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.modal-content p {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}

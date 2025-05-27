@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="a_propos.css" rel="stylesheet" />
+    <link href="../footer navbar/footer.css" rel="stylesheet" />
+    <link href="../footer navbar/Navbar.css" rel="stylesheet" />
+    <script src="../footer navbar/footer.js" defer></script>
+    <script src="../Javascript/main.js" defer></script>
+    <script src="../Javascript/menu.js" defer></script>
+    <script src="a_propos.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A propos</title>
+  </head>
+  <body>
+     <div id="loader" class="hidden">
+  <span>Chargement...</span>
+  <img src="../image/tsunamusic.png" alt="Chargement..." class="loader-logo">
+</div>
+<div id="horloge-container">
+    <a id="phrase1"></a>
+    <b><p id="time"></p></b>
+    <a id="phrase2"></a>
+    <b><a id="seconde"></a></b></p>
+</div>
+<div id="modal-guitariste" class="hidden" href="#guitariste2" onclick="modal(event)">
+  <div class="modal-content">
+    <h2>Un guitariste</h2>
+    <img src="../image/guitariste.png" alt="Un guitariste" style="max-width: 80%; display: block; margin: 20px auto;border-radius: 10px;">
+    <p>Nous somme connu dans le monde des guitaristes. On est le goat des montagne en guitare, meme la guitare a peur, c'est la fin du text, je peux pu parler, la boulette</p>
+  </div>
+</div>
+
+<div id="modal-musique" class="hidden" href="#musique2" onclick="modal(event)">
+  <div class="modal-content">
+    <h2>Une colab</h2>
+    <img src="../image/musique.png" alt="Une colab" style="max-width: 80%; display: block; margin: 20px auto;border-radius: 10px;">
+    <p>Nous somme en colaboration avec isen musique. Il sont fort mais il faut les aider dans leurs quetes vers une plus grande destiné.</p>
+  </div>
+</div>
+
+<div id="modal-gojira" class="hidden" href="#gojira2" onclick="modal(event)">
+  <div class="modal-content">
+    <h2>Gojira</h2>
+    <img src="../image/gojira.png" alt="Gojira" style="max-width: 80%; display: block; margin: 20px auto;border-radius: 10px;">
+    <p>C'est nous les fameux, très connu, producteurs de gojira. C'est vrai que la on pas vraiment faire mieux en terme de passé dans la musique. Meme si c'est sur que certtain son meilleur que nous.</p>
+  </div>
+</div>
+
+    <header>
+      <img src="../image/vitrine.jpg" alt="vitrine" id="vitrine">
+      <nav class="navbar">
+        <div class="menu">
+          <label for="bouton" class="menu-icon"><h2>☰</h2></label>
+                   <input type="checkbox" id="bouton">
+                             <ul class="nav-menu">
+                               <li class="nav-item"> <a href="../Equipe/equipe.html"><h3>L'équipe</h3></a> </li>
+                               <li class="nav-item"> <a href="../contact/contacte.html"><h3>Contact</h3></a> </li>
+                               <li class="nav-item"> <a href="../apropos/a_propos.html"><h3>À propos</h3></a> </li>
+                             </ul>
+          <a href="../index.html"><h2>Accueil</h2></a>
+          <a href="../Produits/produit.html"><h2>Nos produits</h2></a>
+          <a href="../index.html" id="logo-link">
+          <img src="../image/tsunamusic.png" alt="Logo" id="Logo">
+          </div>
+      <div class="navigation">
+          <a href="../Equipe/equipe.html"><h2>L'équipe</h2></a>
+          <a href="../contact/contacte.html"><h2>Contact</h2></a>
+          <a href="a_propos.html"><h2>À propos</h2></a>
+          </div>
+      </nav>
+    </header>
+    <br><br>
+    <h1>A propos de nous<hr width="50%" color="black" ></h1>
+
+
+       <div class="product-grid">
+        <div class="Histoire-img">
+            <img src="../image/hommeavecinstrument.jpg">
+        </div>
+         <div class="Histoire">
+            <div class="text-card">
+            <p class="Titre-card">Notre Histoire<hr width="30%" align="left"></p>
+            <br>
+            <p>Alexandre et Jules n’ont pas changé le monde, mais ils ont créé un espace où leur passion trouve un écho auprès de milliers de musiciens. Ce projet, né d’une frustration partagée, est devenu un exemple de ce que deux amis peuvent accomplir en alliant leurs forces et leurs compétences.</p>
+            </div>
+        </div>
+      </div>
+
+
+
+      <hr class="ligne" width="50%" color="black">
+      <div class="info-grid">
+        <div class="info-card">
+          <img src="../image/guitariste.png" class="imginfo">
+            <div class="text-card">
+            <p class="Titre-card" href="#guitariste" style="cursor:pointer;" onclick="modal(event)">Un guitariste<hr width="40%" align="center"></p>
+            <br>
+            <p>Nous somme connu dans le monde des guitaristes.</p>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+          <img src="../image/musique.png" class="imginfo">
+            <div class="text-card">
+            <p class="Titre-card" href="#musique" style="cursor:pointer;" onclick="modal(event)">Une colab<hr width="40%" align="center"></p>
+            <br>
+            <p>Nous somme en colaboration avec isen musique.</p>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+          <img src="../image/gojira.png" class="imginfo">
+            <div class="text-card">
+            <p class="Titre-card" href="#gojira" style="cursor:pointer;" onclick="modal(event)">Gojira<hr width="40%" align="center"></p>
+            <br>
+            <p>C'est nous les fameux, très connu, producteurs de gojira.</p>
+            </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Nous somme une petite starup qui vendons des instruments de musique pour tous.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                  <li><a href="../Acceuil (Index)/index.html">Accueil</a></li>
+                  <li><a href="../contact/contacte.html">Contact</h2></li>
+                  <li><a href="../apropos/a_propos.html">À propos</h2></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <a>Suivez-nous</a>
+                <div class="social-icons">
+                  <br><a href="https://www.facebook.com/groups/elonmusk1/">Facebook</a>
+                    <a href="https://x.com/elonmusk">Twitter</a>
+                    <a href="https://www.instagram.com/elonmusk__official__/">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <p class="phone-number" data-number="+33 6 12 34 56 78" >+33 6 12 34 56 78</p>
+            <div id="confirmation-section" style="display:none;">
+              <p>Si vous voulez appeler ce numéro : <span id="copied-number"></span>, entrez-le à nouveau :</p>
+              <input type="text" id="phone-input" placeholder="+33612345678">
+              <button id="validate-button">Valider</button>
+            </div>
+            <audio id="ringtone" src="../sonnerie/Counter-Strike Global Offensive - Main Menu Music Theme Extended.mp3"></audio>
+        <div class="footer-bottom">
+            <p>&copy; Tsunamusique.</p>
+        </div>
+        
+    </footer>
+  </body>
+</htm

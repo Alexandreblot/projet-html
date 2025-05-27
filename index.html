@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="Acceuil (Index)/index.css" rel="stylesheet" />
+    <link href="footer navbar/footer.css" rel="stylesheet" />
+    <link href="footer navbar/Navbar.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Javascript/main.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="Javascript/menu.js" defer></script>
+    <script src="footer navbar/footer.js" defer></script>
+    <script src="" defer></script>
+    <title>Accueil</title>
+  </head>
+  <body>
+    
+    <div id="horloge-container">
+    <a id="phrase1"></a>
+    <b><p id="time"></p></b>
+    <a id="phrase2"></a>
+    <b><a id="seconde"></a></b></p>
+</div>
+    <header>
+  <div class="vitrine-overlay">
+    <img src="image/vitrine.jpg" alt="vitrine" id="vitrine">
+  </div>
+  <div class="vitrine-text">
+    <h1>Tsunamusique</h1>
+    <p id="slogan">Une musique qui vous fait vibrer</p>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="menu">
+    <label for="bouton" class="menu-icon"><h2>☰</h2></label>
+    <input type="checkbox" id="bouton">
+    <ul class="nav-menu">
+      <li class="nav-item"> <a href="Equipe/equipe.html"><h3>L'équipe</h3></a> </li>
+      <li class="nav-item"> <a href="contact/contacte.html"><h3>Contact</h3></a> </li>
+      <li class="nav-item"> <a href="propos/a_propos.html"><h3>À propos</h3></a> </li>
+    </ul>
+    <a href="index.html"><h2>Accueil</h2></a>
+    <a href="Produits/produit.html"><h2>Nos produits</h2></a>
+    <a href="index.html" id="logo-link">
+      <img src="image/tsunamusic.png" alt="Logo" id="Logo">
+    </a>
+  </div>
+  <div class="navigation">
+    <a href="Equipe/equipe.html"><h2>L'équipe</h2></a>
+    <a href="contact/contacte.html"><h2>Contact</h2></a>
+    <a href="apropos/a_propos.html"><h2>À propos</h2></a>
+  </div>
+</nav>
+    <div id="loader" class="hidden">
+  <span>Chargement...</span>
+  <img src="image/tsunamusic.png" alt="Chargement..." class="loader-logo">
+</div>
+    <div id="video">
+      <video src="video/Dcouvrez Notre Startup_ Vente d'Instruments de Musique en Ligne.mp4" controls width="500"></video>
+    </div>
+      <div id="actualite">
+        <h1 class="">Actualité</h1>
+        <hr width="25%" color="black" >
+        <div class="actualite-container">
+          <div class="actualite-item text-from-left" id="Gibson">
+            <h2>🎸 Lancement exclusif : La Gibson Phoenix - La guitare qui renaît de ses cordes</h2>
+            <p>
+              Notre magasin est fier de présenter en avant-première mondiale la Gibson Phoenix. Inspirée par les classiques des années 70, cette guitare combine un design vintage et une technologie de pointe : micros auto-réglables et un manche avec contrôle de température intégré pour une précision ultime. En stock dès ce vendredi.
+            </p>
+          </div>
+        
+          <div class="actualite-item text-from-right" id="Atelier">
+            <h2>🎶 Atelier spécial : Devenez un maestro en fingerstyle !</h2>
+            <p>
+              Rejoignez-nous pour un atelier exclusif animé par Luis Del Vega, maestro du fingerstyle et sensation YouTube. Il vous apprendra à transformer vos arpèges en symphonies personnelles.<br>
+              📅 Date : Samedi 2 décembre<br>
+              🕒 Heure : 15h<br>
+              📍 Lieu : Salle acoustique de GuitarVibes<br>
+              <strong>Inscrivez-vous vite, places limitées !</strong>
+            </p>
+          </div>
+        
+          <div class="actualite-item text-from-left" id="Battle">
+            <h2>🌟 Battle des légendes locales - Qui sera le roi du riff ?</h2>
+            <p>
+              Dimanche, notre boutique accueille un concours épique où les guitaristes locaux se défieront sur des morceaux imposés et improvisés. Le gagnant repartira avec une Fender Stratocaster édition limitée 2024.<br>
+              ⚡ Venez voter pour votre favori et découvrir de nouveaux talents !
+            </p>
+          </div>
+
+          <div class="actualite-item text-from-right" id="mixage">
+            <h2>🎧 Les secrets d'un bon mixage guitare</h2>
+            <p>
+              vous voulez que vos morceaux sonnent comme un pro ? Découvrez les bases d’un mixage réussi avec notre guide exclusif.
+                   
+                🎚️ Ajustez vos égaliseurs pour des sons clairs et équilibrés.
+                🎛️ Utilisez des effets comme la reverb et le delay pour donner de la profondeur.
+                🎵 Trouvez le bon placement dans le mix stéréo.
+
+              <strong>Astuce bonus : La compression peut transformer vos solos en véritables chefs-d'œuvre sonores ! Passez en magasin pour des conseils personnalisés ou tester nos outils audio de pointe.</strong>
+            </p>
+          </div>
+        
+          <div class="actualite-item text-from-left" id="lalaland">
+            <h2>📢 Le saviez-vous ?</h2>
+            <p>
+              Les guitares électriques datant des années 50 voient leur valeur grimper de 15 % par an en moyenne ! Si vous avez une perle rare qui dort chez vous, passez nous voir : notre expert en vintage pourra estimer gratuitement votre instrument.
+            </p>
+          </div>
+        
+          <div class="actualite-item text-from-right" id="Promo">
+            <h2>🛍️ Promo Black Friday prolongée !</h2>
+            <p>
+              Nous savons que vous êtes nombreux à rêver de nouvelles cordes ou d’un ampli digne de ce nom !<br>
+              🔥 -20 % sur toutes les pédales d’effet Boss<br>
+              🔥 -15 % sur les amplis Marshall<br>
+              🔥 Un set de cordes offert pour tout achat supérieur à 100 €<br>
+              <strong>Profitez-en avant le 1er décembre !</strong>
+            </p>
+          </div>
+        </div>
+          <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>À propos</h3>
+                    <p>Nous somme une petite starup qui vendons des instruments de musique pour tous.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                      <li><a href="../Acceuil (Index)/index.html">Accueil</a></li>
+                      <li><a href="../contact/contacte.html">Contact</h2></li>
+                      <li><a href="../apropos/a_propos.html">À propos</h2></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <a>Suivez-nous</a>
+                    <div class="social-icons">
+                      <br><a href="https://www.facebook.com/groups/elonmusk1/">Facebook</a>
+                        <a href="https://x.com/elonmusk">Twitter</a>
+                        <a href="https://www.instagram.com/elonmusk__official__/">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <p class="phone-number" data-number="+33 6 12 34 56 78" >+33 6 12 34 56 78</p>
+
+            <div id="confirmation-section" style="display:none;">
+              <p>Si vous voulez appeler ce numéro : <span id="copied-number"></span>, entrez-le à nouveau :</p>
+              <input type="text" id="phone-input" placeholder="+33612345678">
+              <button id="validate-button">Valider</button>
+            </div>
+
+            <audio id="ringtone" src="../sonnerie/Counter-Strike Global Offensive - Main Menu Music Theme Extended.mp3"></audio>
+            <div class="footer-bottom">
+                <p>&copy; Tsunamusique.</p>
+            </div>
+            
+        </footer>
+        </body>
+        </html>

@@ -1,0 +1,241 @@
+header,label,
+body{
+    margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+#loader {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(255,255,255,0.9);
+  z-index: 10000;
+  flex-direction: column;
+}
+#loader span {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#loader:not(.hidden) {
+  display: flex;
+}
+#loader::after {
+  content: none; /* Désactive le rond animé */
+}
+.loader-logo {
+  width: 150px;
+  height: 250px;
+  animation: spin 1.2s linear infinite;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+#horloge-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(236, 255, 127);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+}
+
+#time {
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b3535;
+  margin: 0;
+  text-transform: none;
+  text-decoration: none;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+
+}
+nav {
+  width: 100%;
+}
+
+.menu-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: orange;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.navbar {
+  position: relative;
+}
+
+#logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+#Logo {
+  height: 100px; 
+}
+
+.menu-icon,
+.navigation {
+  z-index: 5;
+}
+
+
+.navigation a {
+  color: white;
+  font-size: 18px;
+  transition: 0.2s linear;
+}
+.navigation {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+}
+.menu a {
+  color: white;
+  font-size: 18px;
+  margin: auto;
+}
+.navbar a {
+  transition: 0.2s linear;
+}
+
+.navbar a:hover,
+.navigation a:hover {
+  transform: scale(1.05);
+}
+
+.navbar input, .nav-menu, .dropdown{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-icon {
+  font-size: 20px;
+  margin-right: 0px;
+  color: orange;
+  cursor: pointer;
+}
+.navigation{
+  display: none;
+}
+.menu a{
+  font-size: 15px;
+}
+.navbar input, .nav-menu, .dropdown{
+  display: none;
+}
+
+[id=bouton]:checked ~ .nav-menu {
+  display: block;
+}
+
+.nav-menu{
+  background-color: #3b3535;
+    position: absolute;
+    top: 80px; /* Ajuste selon le design */
+    left: 0px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    min-width: 150px;
+    display: none; /* Cacher par défaut */
+    z-index: 1000;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.nav-item a, .drop-item a, .show{
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+
+.nav-menu a:hover, .show:hover{
+  transform: scale(1.05);
+}
+
+.vitrine-text {
+font-size: 30px;
+}
+
+#logo-link{
+  display:none;
+}
+#horloge-container{
+  display: center;
+}
+}
+
+.vitrine-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #000, 0 0 10px #333;
+  z-index: 2;
+  width: auto;
+  min-width: 320px;
+  max-width: 80vw;
+  pointer-events: none; /* Le texte ne gêne pas les clics */
+  background: rgba(30, 30, 30, 0.7); /* Arrière-plan semi-transparent */
+  border-radius: 18px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+.vitrine-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #ecd8d8;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.vitrine-text p {
+  font-size: 1.5rem;
+  margin: 10px 0 0 0;
+  font-weight: 400;
+}
+/* Pour que le header soit positionné relativement */
+header {
+  position: relative;
+}
